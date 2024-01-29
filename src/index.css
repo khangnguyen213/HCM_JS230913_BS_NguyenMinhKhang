@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+.container {
+  width: 900px;
+  margin: 24px auto;
+  padding: 20px 40px;
+  border: 2px solid rgb(236, 236, 236);
+  box-shadow: 0 0 10px rgb(229, 229, 229);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop .modal-delete {
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.backdrop .modal-delete h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.backdrop .modal-delete h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.backdrop .modal-delete .modal-delete-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.backdrop .modal-delete .modal-delete-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(74, 93, 255);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.backdrop .modal-edit {
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.backdrop .modal-edit h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.backdrop .modal-edit h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.backdrop .modal-edit input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(236, 236, 236);
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+.backdrop .modal-edit .modal-edit-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.backdrop .modal-edit .modal-edit-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(74, 93, 255);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.container .add-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  column-gap: 10px;
+}
+
+.container .add-task input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(236, 236, 236);
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+.container .add-task button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(74, 93, 255);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  cursor: pointer;
+}
+input[type='checkbox']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: white;
+}
+input[type='checkbox']:checked:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.container li div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.container ul img {
+  margin: 0 auto;
+}
+
+.container ul .summary {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+}
+
+.completed {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.button-group > img {
+  cursor: pointer;
+}
